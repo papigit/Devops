@@ -1,0 +1,7 @@
+---
+- hosts: "{{ remote_server }}"
+  remote_user: "{{ remote_user }}"
+
+  tasks:
+    - name: Test Python
+      command: python /var/tmp/uptime.py
